@@ -1,0 +1,45 @@
+package com.spring.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.spring.entities.Student;
+
+public class StudentDaoImpl implements StudentDAO{
+	
+	private JdbcTemplate jdbcTemp;
+
+	public StudentDaoImpl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public StudentDaoImpl(JdbcTemplate jdbcTemp) {
+		super();
+		this.jdbcTemp = jdbcTemp;
+	}
+
+	public JdbcTemplate getJdbcTemp() {
+		return jdbcTemp;
+	}
+
+	public void setJdbcTemp(JdbcTemplate jdbcTemp) {
+		this.jdbcTemp = jdbcTemp;
+	}
+
+	public int insert(Student student) {
+		String q = "insert into student values(?,?,?)";
+        int t = this.jdbcTemp.update(q,student.getId(),student.getName(),student.getCity());
+		return t;
+	}
+
+	public int change(Student student) {
+		String q = "update into student set name = ?, city = ? where id =? ";
+        int t = this.jdbcTemp.update(q,student.getName(),student.getCity(),student.getId());
+		return t;
+		
+	}
+
+
+	
+
+}

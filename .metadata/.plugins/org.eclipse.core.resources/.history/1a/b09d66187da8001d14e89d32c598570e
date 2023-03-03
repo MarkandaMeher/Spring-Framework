@@ -1,0 +1,17 @@
+package com.springcore.javaconfig;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+	
+	public Samosa getSamosa() {
+		return new Samosa();
+	}
+	
+	public Student getStudent() {
+		Student s = new Student(getSamosa());
+		return s;
+	}
+
+}

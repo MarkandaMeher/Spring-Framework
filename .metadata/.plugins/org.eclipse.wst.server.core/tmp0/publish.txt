@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Feb 14 21:35:21 IST 2023
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\piyus\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-el\\10.0.8\\tomcat-embed-el-10.0.8.jar=WEB-INF/lib/tomcat-embed-el-10.0.8.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\piyus\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\10.0.8\\tomcat-embed-jasper-10.0.8.jar=WEB-INF/lib/tomcat-embed-jasper-10.0.8.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\piyus\\.m2\\repository\\org\\springframework\\spring-web\\5.3.5\\spring-web-5.3.5.jar=WEB-INF/lib/spring-web-5.3.5.jar

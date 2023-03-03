@@ -1,0 +1,16 @@
+package com.spring.dao;
+
+import com.spring.entities.Student;
+
+public interface StudentDAO {
+	
+	public int insert(Student student);
+	
+	public int change(Student student);
+	
+	public int del(Student student);
+		
+	public Student getStudent(int id);
+	
+
+}

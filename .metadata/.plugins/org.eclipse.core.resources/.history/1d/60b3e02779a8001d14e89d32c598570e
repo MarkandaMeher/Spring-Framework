@@ -1,0 +1,9 @@
+package com.springcore.javaconfig;
+
+public class Student {
+	
+	public void method() {
+		System.out.println("Student is studying...");
+	}
+
+}

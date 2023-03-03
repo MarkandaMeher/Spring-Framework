@@ -1,0 +1,39 @@
+package com.springcore.streotype;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+	
+	@Value("Rakesh Bhai")
+	private String studentName;
+	@Value("Bihar")
+	private String ciry;
+	public Student(String studentName, String ciry) {
+		super();
+		this.studentName = studentName;
+		this.ciry = ciry;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Student [studentName=" + studentName + ", ciry=" + ciry + "]";
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getCiry() {
+		return ciry;
+	}
+	public void setCiry(String ciry) {
+		this.ciry = ciry;
+	}
+
+}
